@@ -13,7 +13,7 @@ desired_caps = {
 
 class TestExample():
     def test_example(self):
-        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps, strict_ssl=False)
         self.driver.implicitly_wait(10)
 
         username_input = self.driver.find_element(by=AppiumBy.ID, value='com.experitest.ExperiBank:id/usernameTextField')
