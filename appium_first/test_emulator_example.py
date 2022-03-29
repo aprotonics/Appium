@@ -2,6 +2,9 @@ from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 
 
+# adb shell pm list packages
+# adb shell dumpsys activity | grep 'mCurrent'
+
 desired_caps = {
     "platformName": "Android",
     "platformVersion": "8.0.0",
